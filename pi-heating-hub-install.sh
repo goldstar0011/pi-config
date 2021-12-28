@@ -40,7 +40,7 @@ if [[ "$PHP_INSTALLED" == "" ]]
 then
   printf "\n\n Installing PHP ...\n"
   # Install Apache
-  apt-get install php5 -y
+  apt-get install php8.0 -y
 
   PHP_INSTALLED=$(which php)
     if [[ "$PHP_INSTALLED" == "" ]]
