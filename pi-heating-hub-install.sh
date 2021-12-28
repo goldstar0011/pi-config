@@ -3,7 +3,7 @@
 #          Raspberry Pi setup, 'pi-heating-hub' configuration script.
 # Author : Jeffrey.Powell ( jffrypwll <at> googlemail <dot> com )
 # Date   : Nov 2016
-
+# Updated by goldstar0011 Dec 2021
 # Die on any errors
 
 #set -e
