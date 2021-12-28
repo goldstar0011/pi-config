@@ -57,7 +57,7 @@ if [[ "$MYSQL_INSTALLED" == "" ]]
 then
   printf "\n\n Installing MYSQL ...\n"
   # Install Apache
-  apt-get install mysql-server -y --fix-missing
+  apt-get install mariadb-server -y --fix-missing
 
   MYSQL_INSTALLED=$(which mysql)
     if [[ "$MYSQL_INSTALLED" == "" ]]
