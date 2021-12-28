@@ -69,16 +69,16 @@ else
   printf "\n\n MYSQL is already installed. \n"
 fi
 
-# sudo apt-get install php5-mysql
+# sudo apt-get install php-mysql
 
-PHPMYSQL_INSTALLED=$(find /var/lib/dpkg -name php5-mysql*)
+PHPMYSQL_INSTALLED=$(find /var/lib/dpkg -name php-mysql*)
 if [[ "$PHPMYSQL_INSTALLED" == "" ]]
 then
   printf "\n\n Installing MYSQL PHP Module ...\n"
   # Install Apache
   apt-get install php-mysql -y
 
-  PHPMYSQL_INSTALLED=$(find /var/lib/dpkg -name php5-mysql*)
+  PHPMYSQL_INSTALLED=$(find /var/lib/dpkg -name php-mysql*)
     if [[ "$PHPMYSQL_INSTALLED" == "" ]]
     then
       printf "\n\n EXITING : MYSQL PHP Module installation FAILED\n"
