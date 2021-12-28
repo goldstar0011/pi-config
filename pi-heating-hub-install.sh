@@ -40,7 +40,7 @@ if [[ "$PHP_INSTALLED" == "" ]]
 then
   printf "\n\n Installing PHP ...\n"
   # Install Apache
-  apt-get install php8.0 -y
+  apt-get install php -y
 
   PHP_INSTALLED=$(which php)
     if [[ "$PHP_INSTALLED" == "" ]]
@@ -71,22 +71,22 @@ fi
 
 # sudo apt-get install php5-mysql
 
-#PHPMYSQL_INSTALLED=$(find /var/lib/dpkg -name php5-mysql*)
-#if [[ "$PHPMYSQL_INSTALLED" == "" ]]
-#then
-#  printf "\n\n Installing MYSQL PHP Module ...\n"
+PHPMYSQL_INSTALLED=$(find /var/lib/dpkg -name php5-mysql*)
+if [[ "$PHPMYSQL_INSTALLED" == "" ]]
+then
+  printf "\n\n Installing MYSQL PHP Module ...\n"
   # Install Apache
-#  apt-get install php5-mysql -y
+  apt-get install php5-mysql -y
 
-#  PHPMYSQL_INSTALLED=$(find /var/lib/dpkg -name php5-mysql*)
-#    if [[ "$PHPMYSQL_INSTALLED" == "" ]]
-#    then
-#      printf "\n\n EXITING : MYSQL PHP Module installation FAILED\n"
-#      exit 1
-#    fi
-#else
-#  printf "\n\n MYSQL PHP Module is already installed. \n"
-#fi
+  PHPMYSQL_INSTALLED=$(find /var/lib/dpkg -name php5-mysql*)
+    if [[ "$PHPMYSQL_INSTALLED" == "" ]]
+    then
+      printf "\n\n EXITING : MYSQL PHP Module installation FAILED\n"
+      exit 1
+    fi
+else
+  printf "\n\n MYSQL PHP Module is already installed. \n"
+fi
 
 # apt-get install python3-mysqldb -y
 
