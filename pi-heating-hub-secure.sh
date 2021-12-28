@@ -15,13 +15,6 @@ then
   exit 1
 fi
 
-OS_VERSION=$(cat /etc/os-release | grep VERSION=)
-if [[ $OS_VERSION != *"jessie"* ]]
-then
-  printf "\n\n EXITING : Script must be run on PI OS Jessie. \n\n"
-  exit 1
-fi
-
 cd /home/pi
 
 cat > /var/www/pi-heating-hub/.htaccess <<ACCESS
