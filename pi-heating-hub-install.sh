@@ -97,7 +97,7 @@ then
   # Install Apache
   apt-get install python3-mysqldb -y
 
-  PYMYSQL_INSTALLED=$(find /var/lib/dpkg -name python-mysql*)
+  PYMYSQL_INSTALLED=$(find /var/lib/dpkg -name python3-mysql*)
     if [[ "$PYMYSQL_INSTALLED" == "" ]]
     then
       printf "\n\n EXITING : MYSQL Python Module installation FAILED\n"
