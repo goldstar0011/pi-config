@@ -1,8 +1,5 @@
 # pi-config
 
-
-usage : 
-
 HUB install :
 
 curl "https://raw.githubusercontent.com/goldstar0011/pi-config/master/base-install.sh" > base-install.sh && sudo bash base-install.sh
