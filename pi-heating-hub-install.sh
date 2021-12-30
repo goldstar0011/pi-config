@@ -162,7 +162,7 @@ then
     rm -rf "/var/www/pi-heating-hub"
   fi
 
-  wget "https://github.com/JeffreyPowell/pi-heating-hub/archive/$PI_HEATING_V.tar.gz" -O "/home/pi/pi-heating-hub.tar.gz"
+  wget "https://github.com/goldstar0011/pi-heating-hub/archive/$PI_HEATING_V.tar.gz" -O "/home/pi/pi-heating-hub.tar.gz"
   tar -xvzf "/home/pi/pi-heating-hub.tar.gz"
   rm "/home/pi/pi-heating-hub.tar.gz"
   mv "/home/pi/pi-heating-hub-$PI_HEATING_V" "/home/pi/pi-heating-hub"
