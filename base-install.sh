@@ -2,7 +2,7 @@
 
 #          Raspberry Pi setup, base configuration script.
 # Author : Jeffrey.Powell ( jffrypwll <at> googlemail <dot> com )
-# Date   : Nov 2016
+# Date   : Nov 2016.
 
 # Die on any errors
 
