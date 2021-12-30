@@ -94,7 +94,7 @@ then
     rm -rf "/var/www/pi-heating-remote"
   fi
   
-  wget "https://github.com/JeffreyPowell/pi-heating-remote/archive/$PI_HEATING_V.tar.gz" -O "/home/pi/pi-heating-remote.tar.gz"
+  wget "https://github.com/goldstar0011/pi-heating-remote/archive/$PI_HEATING_V.tar.gz" -O "/home/pi/pi-heating-remote.tar.gz"
   tar -xvzf "/home/pi/pi-heating-remote.tar.gz"
   rm "/home/pi/pi-heating-remote.tar.gz"
   mv "/home/pi/pi-heating-remote-$PI_HEATING_V" "/home/pi/pi-heating-remote"
